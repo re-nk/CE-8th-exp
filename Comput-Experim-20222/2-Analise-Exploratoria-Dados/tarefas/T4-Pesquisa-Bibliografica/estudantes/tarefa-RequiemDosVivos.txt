@@ -1,0 +1,198 @@
+\chapter{T4 - Análise Bibliográfica sobre Simulação e Ensino-Aprendizagem, por Paulo Mauricio Costa Lopes
+\label{chap:bibliometria:RequiemDosVivos}}
+
+\section{Planejamento do Estudo}\label{S@RequiemDosVivos:planejamento}
+
+O modelo que será objeto de estudo neste trabalho é o de \textbf{virus\_on\_network}
+“A virus model with some
+number of agents entering in contact through a network of relations”, um modelo multi-agente de conexão e infecção para COVID-19. Esse trabalho foi adaptado para ser usado em infecção de conectividade de computadores.  
+
+Esse trabalho busca responder às seguintes perguntas:
+\begin{itemize}
+\item Como a simulação multiagente tem sido usada em sistema de infecções?
+
+\item Como podemos adaptar esse trabalho? 
+
+\item Qual a importância desse modelo?
+
+\item Quais os principais temas e soluções ligadas a modelos similares?
+\end{itemize}
+
+\subsection{O que já existe de pesquisa bibliométrica sobre esse tema?}
+
+Com base nos resumos lidos, os artigos que analisam o problema "Infecção e propagação de malware" com inumeras abordagens: usando simulação de multi-agent ou individual-based models; discorrendo sobre a caracterização dos indivíduos da rede, IoT, mobile, computadores pessoais e redes heterogêneas; A topologia da rede também é algo levado em consideração, p2p, bus, mesh; Por fim alguns artigos tentam analisar os métodos de se defesa. 
+
+\subsection{Uso do Bibliometrix e Biblioshiny}
+Serão usadas a ferramenta e o \textit{workflow} proposto pelos autores do pacote Bibliometrix, conforme indica a figura ~\ref{fig:bibliometrix:workflow}.
+
+\subsection{Limitações} 
+Inicialmente meu tema escolhido tinha sido Schelling - modelo de segregação, já havia feito algumas atividades e após algumas tarefas tivemos um incidente que alguém apagou o repositório/algumas tarefas no overleaf da materia tornando mais trabalhoso enviar as tarefas. Algumas aulas apos o ocorrido levantei a ideia de trocar meu tema para , ele falou que seria necessário algumas adaptações mais que era possível. Então meu tema passou a ser \textbf{virus\_on\_network} e estou refazendo as atividades anteriores.
+
+
+\section{Coleta de dados}
+
+A coleta de dados feita utilizando o Web of Science, as consultas foram feitas inicialmente nos dias 15 de Novembro de 2022 mas devido a troca de tema realizei novas buscas nos dias 8 de Janeiro de 2023 e 15 de Janeiro de 2023, acessado pelo Portal de Periódicos da CAPES. Com a nova query foram retornados 763 artigos.
+
+\subsection{Query de Busca}
+
+A query usada inicialmente foi:
+
+ALL=( ( (agent-based) OR (simulation model))AND ( (propagation) OR (proliferate)) AND ( (malware) OR (virus) OR (worm) ))
+
+Porém essa query retornava artigos relacionados a saúde então foi feita uma nova query para que os artigos resultantes fossem somente relacionados área de tecnologia.
+
+ALL=( ( ( agent-based )  OR ( model ) OR ( simulation ) ) AND ( propagation ) AND ( ( malware ) OR ( worm ) ) AND (network) )
+
+\href{https://www.webofscience.com/wos/woscc/summary/a957dde3-deff-47e5-957f-07b948edd2ca-6af2cb96/relevance/1}{Link para query}
+
+
+\subsubsection{Explicação para os termos de busca usados}
+
+A busca consistiu de quatro conjutos de termos ligados por \textit{AND}, aplicadas à busca por tópico (O termo de busca pode aparecer no Título, no Resumo, na Author Keywords, ou nas Keywords Plus da referência)
+
+Primeiro conjunto de termos: 
+Os termos \texttt{agent-based}, \texttt{model} e \texttt{simulation} foram usados para recuperar artigos que tenham em seu título, palavras-chave e resumo, termos relacionados a métodos modelos ou simulações.
+
+Segundo conjunto de termos:
+O conjunto unitário \texttt{propagation}, inicialmente tinha sido um conjunto com dois elementos mas após teste resolvo torna-lo um conjunto unitário para aprimorar a busca.
+
+Terceiro conjunto de termos:
+Os termos \texttt{malware} e  \texttt{worm} foram utilizados para selecionar artigos que fossem relacionados a malwares a worms (um tipo de malware especifico).
+
+Quarto conjunto de termos:
+O quarto conjunto de termos é um conjunto unitario \textit{Network} que foi utilizado para explicitar que essas infecções ocorreram por network.
+
+
+
+\subsection{Registros recuperados}
+
+Os 763 registros obtidos como resultado da busca encontram-se em \url{https://github.com/jhcf/Comput-Experim-20212-Overleaf2/exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/resic.txt}, 
+Foram utilizadas as opções \textit{Exportar registros para arquivo de texto sem formatação} e \textit{registro completo e referencias citadas} no WoS, para que as citações também fosse usadas em análises da citações (estrutura intelectual do conhecimento). Os 763 registros foram recuperados em dois blocos de até 500 registros por vez (1-500, 501-763).
+
+
+
+
+\section{Análise dos dados}
+
+\subsection{Filtragem de registros}
+
+Foi aplicado um filtro ao dataset inicial, com 763 registros, que continham pŕevias de artigos, artigos de conferência, capítulos de livro etc. Foram mantidos apenas os registros de artigos publicados em revistas científicas e foram excluidos os que estavam em chines (sobraram somente os artigos em inglês). Após a aplicação desse filtro, 744 registros foram mantidos no dataset.
+
+\subsection{Análise descritiva do dataset}
+
+As informações mais gerais sobre o dataset são as seguintes:
+\begin{description}
+    \item [\textit{Timespan}] Os artigos que atenderam aos critérios de busca e filtragem foram publicados a partir de 1996 até 2023.
+    
+    \item [\textit{Sources}] São 457 fontes de informação que publicaram os documentos recuperados no dataset. 
+
+    \item [\textit {Documents}] Foram recuperados, como dito anteriormente, 744 documentos.
+
+    \item [\textit{Average citations per documents}] Cada artigo no data foi citado, em média 45.51 vezes.
+    
+    \item [\textit{References}] O dataset contém 12907 referências citadas.
+    
+    \item [\textit{Author's Keywords (DE)}] 1539 distintas palavras-chave indicadas pelos autores foram encontradas no dataset.
+
+    \item [\textit{Authors}] 1656 distintos nomes de autores foram encontrados no dataset  
+    
+    \item [\textit{Authors of single-authored documents}] Dentre os 1656 distintos (nomes de) autores encontrados, 28 deles editaram artigos individualmente, isso é, sem co-autores.
+        
+    \item [\textit{Co-Authors per Documents}] A media de coautores por documentos foi de 3.49.
+
+\end{description}
+
+
+
+\section{Visualização dos dados}
+
+
+\subsection{\textit{Annual-Scientific Production}}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/images/req_crescimento_anual.png}
+    \caption{Evolução da produção científica}
+    \label{fig:req_crescimento_anual}
+\end{figure}
+
+A figura \ref{fig:req_crescimento_anual} mostra a produção cientifica anual de 1996 até 2022 (e um pequeno espaço de tempo de 2023).
+
+
+\subsection{\textit{Three-Field Plots}}
+
+As três figuras, \ref{fig:3-fieldplot1}, \ref{fig:3-fieldplot2} e \ref{fig:req_3-fieldplot3} mostram a relação país, revista e palavras chave, foram feitos 3 esquemas de imagem para melhor visualização das palavras-chave, revistas e países mais relevantes para o assunto. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/images/req_threefieldplot_1.png}
+    \caption{Three-Field Plot - I}
+    \label{fig:3-fieldplot1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/images/req_threefieldplot_2.png}
+    \caption{Three-Field Plot - II}
+    \label{fig:3-fieldplot2}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/images/req_threefieldplot_3.png}
+    \caption{Three-Field Plot - III}
+    \label{fig:req_3-fieldplot3}
+\end{figure}
+
+
+
+
+\subsection{\textit{Average citations per Year}}
+
+A figura \ref{fig:req_average-citation} representa graficamente a média de citações ao longo dos anos, de 1996 até 2023. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/images/req_mediacitacoes.png}
+    \caption{Media de Citações por Ano}
+    \label{fig:req_average-citation}
+\end{figure}
+
+\subsection{\textit{Palavras Relevantes}}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/images/req_palavras_relevantes.png}
+    \caption{Palavras Relevantes}
+    \label{fig:req_palavras-relevantes}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\textwidth]{exploratory-data-analysis/RequiemDosVivos/PesqBibliogr/WoS2022/images/req_wordcloud50.png}
+    \caption{Word Cloud}
+    \label{fig:req_req-wordclound}
+\end{figure}
+
+O gráfico \ref{fig:req_palavras-relevantes} auxilia a visualizar quais foram as palavras chaves mais relevantes no data set, também foi possível produzir um \textit{\ref{fig:req_req-wordclound}} com o dataset. 
+
+\newpage
+
+\section{ Interpretação dos dados}
+
+\subsection{Annual Scientific Production}
+
+Existem dois anos marcantes, o primeiro seria 2008 onde provavelmente teve o pico de produções cientificas devido a popularização dos smartphones, lançamento dos 
+primeiros celulares com Android. Após o ano de 2008 existe uma queda acentuada, que provavelmente foi devido a mudança da categoria dos smartphones (a priori \textbf{IoT} e agora \textbf{mobile}). O segundo ponto marcante pe 2019, onde a produção cientifica cresceu muito provavelmente devido o COVID-19, onde foi criado um ambiente mais propício para o uso e infecção de IoT. 
+
+\subsection{Three-Field Plots}
+Inicialmente tinham sido feito plots com múltiplas imagens porém estava difícil visualizar e interpretar os dados então reduzi para 5 elementos, assim podemos inferir quais países produziram mais conteúdo, as revistas que mais publicaram e quais as palavras chaves mais relacionadas. 
+
+\subsection{Average Citations per Year}
+Observando inicialmente a plotagem pensei que existia um erro nos dados então fui ler o artigo em questão, ele é realmente um artigo referenciado mais de 28 mil vezes. O artigo Collective dynamics of 'small-world' networks, de D J Watts, fala sobre o conceito de 'small-worlds' e como a organização é feita. Acredito que esse seja o motivo desse artigo ser tanto citado, muitos estudos devem basear as suas simulações nos conceitos de 'small-worlds' de Watts.
+
+\subsection{Palavras Relevantes}
+As palavras relevantes foram interessantes para visualização dos interesses dos autores. A pesar dos estudos serem diretamente relacionados a malware e worm, a preocupação dos autores parece estar mais voltada para \textbf{Propagação} e \textbf{transmissão}.

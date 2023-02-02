@@ -1,0 +1,6 @@
+R
+library(bibliometrix)
+file <- '<$PATH>/500records.bib'
+M <- convert2df(file = file, dbsource = "scopus", format = "bibtex")
+results <- biblioAnalysis(M, sep = ";")
+S <- summary(object = results, k = 10, pause = FALSE)

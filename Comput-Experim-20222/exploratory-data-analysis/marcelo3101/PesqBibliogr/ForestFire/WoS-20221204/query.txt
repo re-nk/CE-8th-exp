@@ -1,0 +1,9 @@
+simul*
+AND
+(agent OR multiagent)
+AND
+(forest OR jungle* OR wood* OR vegetation* OR wild*)
+AND
+(fire OR spread* OR burn* OR ignition)
+NOT
+(firefight* OR extinguish* OR decision)

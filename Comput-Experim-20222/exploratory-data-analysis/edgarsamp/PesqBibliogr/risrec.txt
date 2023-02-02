@@ -1,0 +1,64 @@
+PT C
+AU Chades, I
+   Bouteiller, B
+AF Chades, Iadine
+   Bouteiller, Bertrand
+BE Zerger, A
+   Argent, RM
+TI Solving Multiagent Markov Decision Processes: A Forest Management
+   Example
+SO MODSIM 2005: INTERNATIONAL CONGRESS ON MODELLING AND SIMULATION:
+   ADVANCES AND APPLICATIONS FOR MANAGEMENT AND DECISION MAKING: ADVANCES
+   AND APPLICATIONS FOR MANAGEMENT AND DECISION MAKING
+LA English
+DT Proceedings Paper
+CT International Congress on Modelling and Simulation (MODSIM05)
+CY DEC 12-15, 2005
+CL Melbourne, AUSTRALIA
+DE Multiagent systems; Stochastic Dynamic Programming; Multiagent
+   Reinforcement Learning
+AB In the Artificial Intelligence community, Markov Decision Processes (MDPs) and Reinforcement Learning (RL) are used to solve sequential decision making problems under uncertainty. However, when problems involve several agents, solving Multi-agent MDPs becomes untractable due to the high complexity level: exponential in the number of agents at least. Nevertheless, these problems may often be represented in a compact way and be decomposed into subproblems weakly coupled. In this paper, we propose to go further in the understanding of previously proposed multi-agent reinforcement learning algorithms. We have evaluated their fitness on a forest management problem.
+   The studied forest is formed by a finite number of stands. Each stand is composed of the same aged trees. The benefit provided by the exploitation and the cut of a stand depends on the quality of the trees, that is to say the age of the trees. Once a stand is cleared, new trees grow until the next harvest and so on. The clear decision has a fixed cost of achievement and also depends on how far is a stand from the previous cleared stands. The probability of losing several stands is represented by the risk of fire occurrences. The forest management yields important incomes that can be optimized: the aim is to find an optimal strategy (also called policy) that maximizes the benefits while taking into account uncertainty of fire occurrence. To solve this problem one must decide the best sequential harvest over a finite period of time.
+   This problem becomes very interesting when the management involves a large amount of stands that are spatially linked. Classically, two approaches are usually investigated to solve Markov decision problems, depending on the quantity and quality of knowledge available:
+   Planning methods. These are used when all the components of the studied system are known and modeled.
+   Learning methods. These are used when the dynamic of system is too complex to be modeled or when the dynamic of the system is partially unknown. However, a simulator can be used to learn optimal solutions using simulation techniques and reward functions.
+   In practice, even for small size problems, planning algorithms can fail to compute optimal policies because of a lack of memory space, whereas Reinforcement Learning (RL) techniques succeed. Nevertheless, despite the fact that convergence of RL algorithms toward optimal policies have been proved, when applied, RL algorithms are more able to give near optimal policies than optimal policies due to important time convergence. Solving very large optimal decision making problems under uncertainty remains an important challenge in Artificial Intelligence and more specifically using MDPs. In order to find near optimal solutions, Multiagent systems provide an interesting alternative to deal with the global complexity of large problems. In designing agents that perceive, decide, and interact locally, one can significantly reduce the global complexity of solving a global problem. We have previously studied this alternative using planning methods (Chades, Scherrer & Charpillet 2002, Chades 2003, Chades 2004), but we are now interested in studying the Multiagent Reinforcement Learning alternative to solve large Markov decision problems.
+   As a preliminary work, we propose in this paper to focus on the heuristics proposed by Schneider, Wong, Moore & Riedmiller (1999). The multi-stand forest management problem chosen offers a way to evaluate these Multiagent Reinforcement Learning algorithms. For this particular problem, the results show that Multiagent Reinforcement Learning algorithms with spatial local rewards find better policies than Multiagent Reinforcement Learning algorithms with global rewards.
+EM iadine.chades@toulouse.inra.fr
+RI Chades, iadine/A-4052-2011
+OI Chades, iadine/0000-0002-7442-2850
+CR Bernstein D. S., 2000, P UAI
+   Chades I., 2004, WORKSH MULT MARK DEC
+   Chades I., 2002, 2002 ACM S APPL COMP
+   Chades I., 2003, THESIS U NANCY 1 LOR
+   Dutech A., 2001, P IJCAI 01
+   Garcia F., 2001, MODSIM 2001
+   Nair R., 2003, IJCAI 03
+   Puterman Martin L., 1994, MARKOV DECISION PROC, V1st, DOI DOI 10.1002/9780470316887
+   Schneider J, 1999, MACHINE LEARNING, PROCEEDINGS, P371
+   Shen J., 2003, P 2 INT JOINT C AUT, P678
+   Shoham Y., 2003, MULTIAGENT REINFORCE
+   Sutton Richard S, 1998, INTRO REINFORCEMENT, V2
+   WATKINS CJCH, 1992, MACH LEARN, V8, P279, DOI 10.1007/BF00992698
+NR 13
+TC 2
+Z9 2
+U1 0
+U2 1
+PU MODELLING & SIMULATION SOC AUSTRALIA & NEW ZEALAND INC
+PI CHRISTCHURCH
+PA MSSANZ, CHRISTCHURCH, 00000, NEW ZEALAND
+BN 978-0-9758400-2-3
+PY 2005
+BP 1594
+EP 1600
+PG 7
+WC Computer Science, Interdisciplinary Applications; Operations Research &
+   Management Science; Mathematics, Applied; Mathematics, Interdisciplinary
+   Applications
+WE Conference Proceedings Citation Index - Science (CPCI-S)
+SC Computer Science; Operations Research & Management Science; Mathematics
+GA BUQ81
+UT WOS:000290114101093
+DA 2022-12-19
+ER

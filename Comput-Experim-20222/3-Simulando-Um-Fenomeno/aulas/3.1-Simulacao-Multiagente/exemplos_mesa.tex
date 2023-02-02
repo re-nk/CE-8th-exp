@@ -1,0 +1,79 @@
+\subsection{Exemplos de Simulações em Python/Mesa}
+
+O framework Python/Mesa, ou simplesmente Mesa, possui um conjunto de simulações exemplo, que será usado para apoiar o desenvolvimento da experimentação computacional que você fará durante todo o restante da disciplina.
+
+São os seguintes os exemplos de simulações construídas usando Mesa, disponíveis na distribuição padrão:
+\begin{description}
+\item [bank\_reserves] 
+
+Descrição presente no código Python/Mesa: ``\textit{This model is a Mesa implementation of the Bank Reserves model from NetLogo. It is a highly abstracted, simplified model of an economy, with only one type of agent and a single bank representing all banks in an economy. People (represented by circles) move randomly within the grid. If two or more people are on the same grid location, there is a 50\% chance that they will trade with each other. If they trade, there is an equal chance of giving the other agent \$5 or \$2. A positive trade balance will be deposited in the bank as savings. If trading results in a negative balance, the agent will try to withdraw from its savings to cover the balance. If it does not have enough savings to cover the negative balance, it will take out a loan from the bank to cover the difference. The bank is required to keep a certain percentage of deposits as reserves and the bank's ability to loan at any given time is a function of the amount of deposits, its reserves, and its current total outstanding loan amount.}''. 
+
+Para mais detalhes sobre esse modelo, ver a descrição do modelo no ambiente NetLogo, em 
+\url{https://ccl.northwestern.edu/netlogo/models/BankReserves}.
+
+\item [boltzmann\_wealth\_model] 
+
+Descrição presente no código Python/Mesa: ``\textit{A simple model of an economy where agents exchange currency at random. All the agents begin with one unit of currency, and each time step can give a unit of currency to another agent. Note how, over time, this produces a highly skewed distribution of wealth.}''
+
+Para uma explicação visual do conceito de Boltzmann aplicado à economia, ver \url{https://www.youtube.com/watch?v=BQrEEdy_uwM}.
+
+\item [boltzmann\_wealth\_model\_network]
+
+Descrição presente no código Python/Mesa: ``\textit{A simple model of an economy where agents exchange currency at random. All the agents begin with one unit of currency, and each time step can give a unit of currency to another agent. Note how, over time, this produces a highly skewed distribution of wealth. Network version}''
+
+Para uma explicação visual do conceito de Boltzmann aplicado à economia, ver \url{https://www.youtube.com/watch?v=BQrEEdy_uwM}.
+A diferença desse modelo em relação ao outro é o uso de uma rede de relacionamento entre os agentes. Para compreender a importância de um modelo baseado em redes, veja a introdução ao trabalho de \citet{pareschi_wealth_2014}.
+
+\item [conways\_game\_of\_life] 
+
+Descrição presente no código Python/Mesa: ``\textit{Represents the 2-dimensional array of cells in Conway's Game of Life.}''
+
+Para uma apresentação detalhada do conceito dos jogos de Conway, veja \url{https://en.wikipedia.org/wiki/Conway's_Game_of_Life}.
+
+\item [epstein\_civil\_violence] 
+
+Descrição presente no código Python/Mesa: ``\textit{Model 1 from "Modeling civil violence: An agent-based computational approach," by Joshua Epstein. \url{http://www.pnas.org/content/99/suppl_3/7243.full} Attributes: height: grid height width: grid width citizen\_density: approximate \% of cells occupied by citizens. cop\_density: approximate \% of calles occupied by cops. citizen\_vision: number of cells in each direction (N, S, E and W) that citizen can inspect cop\_vision: number of cells in each direction (N, S, E and W) that cop can inspect legitimacy: (L) citizens' perception of regime legitimacy, equal across all citizens max\_jail\_term: (J\_max) active\_threshold: if (grievance - (risk\_aversion * arrest\_probability)) > threshold, citizen rebels arrest\_prob\_constant: set to ensure agents make plausible arrest probability estimates movement: binary, whether agents try to move at step end max\_iters: model may not have a natural stopping point, so we set a max.}''
+
+
+\item [forest\_fire] 
+
+Descrição presente no código Python/Mesa:``Simple Forest Fire model.''
+
+Para explicação mais detalhada sobre os fundamentos do fenômeno e da simulação, ver \url{https://en.wikipedia.org/wiki/Forest-fire_model}.
+
+\item [hex\_snowflake] 
+
+Descrição presente no código Python/Mesa:``Represents the hex grid of cells. The grid is represented by a 2-dimensional array of cells with adjacency rules specific to hexagons.''
+
+\item [pd\_grid] 
+
+Descrição presente no código Python/Mesa:``Model class for iterated, spatial prisoner's dilemma model.''
+
+Para uma introdução sobre o que é o dilema do prisioneiro, ver \url{https://www.youtube.com/watch?v=S52tJv7aMIE} e \url{https://webupon.com/blog/iterated-prisoners-dilemma-game/}.
+
+\item [schelling] 
+
+Descrição presente no código Python/Mesa:``Model class for the Schelling segregation model.''
+
+Para uma discussão mais aprofundada sobre o trabalho de Schelling e seus modelos de segregação em \url{https://en.wikipedia.org/wiki/Thomas_Schelling#Models_of_segregation}.
+
+\item [sugarscape\_cg] 
+
+Descrição presente no código Python/Mesa: ``\textit{Sugarscape 2 Constant Growback}''.
+
+Para uma apresentação detalhada do modelo Sugarscape ver \url{https://en.wikipedia.org/wiki/Sugarscape}.
+
+
+\item [virus\_on\_network] 
+
+Descrição presente no código Python/Mesa:``\textit{A virus model with some number of agents entering in contact through a network of relations}''
+
+Para uma introdução mais aprofundada ver: \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7770744/pdf/41109_2020_Article_344.pdf}.
+
+\item [wolf\_sheep] 
+
+Descrição presente no código Python/Mesa:``\textit{A model for simulating wolf and sheep (predator-prey) ecosystem modelling.}''
+
+Para mais detalhes, ver a apresentação em \url{https://sites.google.com/site/biologydarkow/ecology/predator-prey-simulation-of-the-lotka-volterra-model}.
+
+\end{description}

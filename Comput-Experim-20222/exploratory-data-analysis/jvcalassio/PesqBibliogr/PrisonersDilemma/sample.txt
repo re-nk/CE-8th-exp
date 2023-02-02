@@ -1,0 +1,59 @@
+FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Le, S
+   Boyd, R
+AF Le, Stephen
+   Boyd, Robert
+TI Evolutionary dynamics of the continuous iterated Prisoner's dilemma
+SO JOURNAL OF THEORETICAL BIOLOGY
+LA English
+DT Article
+DE discrete iterated prisoner's dilemma; continuous iterated prisoner's
+   dilemma; noisy iterated prisoner's dilemma; generosity; cooperation
+ID LINEAR REACTIVE STRATEGIES; COOPERATION; ALTRUISM
+AB The iterated prisoner's dilemma (IPD) has been widely used in the biological and social sciences to model dyadic cooperation. While most of this work has focused on the discrete prisoner's dilemma, in which actors choose between cooperation and defection, there has been some analysis of the continuous IPD, in which actors can choose any level of cooperation from zero to one. Here, we analyse a model of the continuous IPD with a limited strategy set, and show that a generous strategy achieves the maximum possible payoff against its own type. While this strategy is stable in a neighborhood of the equilibrium point, the equilibrium point itself is always vulnerable to invasion by uncooperative strategies, and hence subject to eventual destabilization. The presence of noise or errors has no effect on this result. Instead, generosity is favored because of its role in increasing contributions to the most efficient level, rather than in counteracting the corrosiveness of noise. Computer simulation using a single-locus infinite alleles Gaussian mutation model suggest that outcomes ranging from a stable cooperative polymorphism to complete collapse of cooperation are possible depending on the magnitude of the mutational variance. Also, making the cost of helping a convex function of the amount of help provided makes it more difficult for cooperative strategies to invade a non-cooperative equilibrium, and for the cooperative equilibrium to resist destabilization by noncooperative strategies.
+   Finally, we demonstrate that a much greater degree of assortment is required to destabilize a non-cooperative equilibrium in the continuous IPD than in the discrete IPD. The continuous model outlined here suggests that incremental amounts of cooperation lead to rapid decay of cooperation and thus even a large degree of assortment will not be sufficient to allow cooperation to increase when cooperators are rare. The extreme degree of assortment required to destabilize the non-cooperative equilibrium, as well as the instability of the cooperative equilibrium, may help explain why cooperation in Prisoner's Dilemmas is so rare in nature. (c) 2006 Elsevier Ltd. All rights reserved.
+C1 Univ Calif Los Angeles, Dept Anthropol, Los Angeles, CA 90095 USA.
+C3 University of California System; University of California Los Angeles
+RP Le, S (corresponding author), Univ Calif Los Angeles, Dept Anthropol, Haines Hall 341 Box 951553, Los Angeles, CA 90095 USA.
+EM Stephen.le@ucla.edu
+CR AXELROD R, 1981, SCIENCE, V211, P1390, DOI 10.1126/science.7466396
+   BENDOR J, 1991, J CONFLICT RESOLUT, V35, P691, DOI 10.1177/0022002791035004007
+   Dugatkin L.A., 1997, COOPERATION ANIMALS
+   HAMILTON WD, 1964, J THEOR BIOL, V7, P1, DOI [10.1016/0022-5193(64)90038-4, 10.1016/0022-5193(64)90039-6]
+   Hammerstein P, 2003, DAHL WS ENV, P83
+   Killingback T, 2002, AM NAT, V160, P421, DOI 10.1086/342070
+   KIMURA M, 1964, GENETICS, V49, P725
+   Lehmann L, 2006, J EVOLUTION BIOL, V19, P1365, DOI 10.1111/j.1420-9101.2006.01119.x
+   Panchanathan K, 2004, NATURE, V432, P499, DOI 10.1038/nature02978
+   Wahl LM, 1999, J THEOR BIOL, V200, P323, DOI 10.1006/jtbi.1999.0997
+   Wahl LM, 1999, J THEOR BIOL, V200, P307, DOI 10.1006/jtbi.1999.0996
+NR 11
+TC 38
+Z9 39
+U1 2
+U2 12
+PU ACADEMIC PRESS LTD- ELSEVIER SCIENCE LTD
+PI LONDON
+PA 24-28 OVAL RD, LONDON NW1 7DX, ENGLAND
+SN 0022-5193
+J9 J THEOR BIOL
+JI J. Theor. Biol.
+PD MAR 21
+PY 2007
+VL 245
+IS 2
+BP 258
+EP 267
+DI 10.1016/j.jtbi.2006.09.016
+PG 10
+WC Biology; Mathematical & Computational Biology
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Life Sciences & Biomedicine - Other Topics; Mathematical & Computational
+   Biology
+GA 146UA
+UT WOS:000244959000007
+PM 17125798
+DA 2022-11-30
+ER

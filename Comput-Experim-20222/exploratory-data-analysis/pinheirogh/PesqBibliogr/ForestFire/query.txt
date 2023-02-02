@@ -1,0 +1,9 @@
+    simul* 
+and 
+    (agent or multiagent) 
+and 
+    (forest or jungle or wood* or bush* or wild*) 
+and 
+    (fire* or burn* or conflagr*) 
+not 
+    (wolf or fish* or sheep or bear or consumer or energy)

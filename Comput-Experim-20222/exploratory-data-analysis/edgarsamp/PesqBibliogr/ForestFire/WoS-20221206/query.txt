@@ -1,0 +1,7 @@
+simul*
+and
+      (agent or multiagent)
+and
+      (forest* or jungle or wood* or timber* or bush* or wild* or vegetat* )
+and
+      (fire* or burn* or conflagr* or ignit*)

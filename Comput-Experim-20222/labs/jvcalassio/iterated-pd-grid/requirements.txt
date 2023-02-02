@@ -1,0 +1,2 @@
+matplotlib
+-e git+https://github.com/projectmesa/mesa@458a1b7b7c06dbc15f7236d851bd045f15ad2202#egg=Mesa

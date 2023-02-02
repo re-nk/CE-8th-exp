@@ -1,0 +1,4 @@
+(simulation (agent* or multi*)) and (classroom or (teach* learn*))
+Topic
+Topicos de citação intermediários: Education&EducationResearch 
+20221116-17h15-WoS-Coleção principal

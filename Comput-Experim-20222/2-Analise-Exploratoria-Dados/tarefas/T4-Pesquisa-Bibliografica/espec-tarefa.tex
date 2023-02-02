@@ -1,0 +1,177 @@
+\chapter{Especificação da Tarefa T4 - Análise Bibliométrica\label{chap:tarefa:analise:bibliometrica}}
+
+\section{Pontuação da Tarefa}
+
+A tarefa vale 25 pontos, que serão distribuídos conforme os critérios descritos em \ref{sec:tarefa:analise:biblio:pontuacao}.
+
+Para compreender a especificação da tarefa na sua integralidade será preciso que leia o capítulo \ref{chap:pesquisa:bibliografica:analise:bibliometrica}, os slides em  \ref{chap:bibliometrix:slides} e o exemplo em \ref{chap:bibliometria:jhcf}.
+
+\section{Objetivo da Tarefa}
+
+Produzir individualmente uma análise bibliométrica inicial, abordando o entendimento de quais tipos de variáveis tem sido \textbf{usadas em simulações e (ou) experimentos reais, para estudo do fenômeno de interesse simulado pelo exemplo de simulação escolhido pelo estudante}.
+
+A simulação do fenômeno em foco, objeto de seu estudo, será a que foi escolhida por você no \href{https://aprender3.unb.br/mod/forum/view.php?id=769097}{Fórum de discussão sobre a disciplina Computação Experimental}, no tópico \href{https://aprender3.unb.br/mod/forum/discuss.php?d=217110}{Escolha da simulação base para a construção do seu laboratório de experimentos}. 
+
+A análise bibliométrica desenvolvida deve conter textos, figuras e tabelas, conforme o exemplo em \ref{chap:bibliometria:jhcf}.
+
+\section{Produto a Entregar}
+
+Por exemplo, se você escolheu a simulação \textbf{wolf\_sheep}, que visa simular o \textbf{equilíbrio presa-predador} em um ecossistema, a sua análise bibliométrica pode ter como foco questões como as seguintes:
+\begin{quote}
+    Como tem sido desenvolvidas pesquisas que usam simulação computacional para investigar o \textbf{equilíbrio presa-predador}, especialmente simulação multiagente?
+    
+    Como o fenômeno na vida real, o \textbf{equilíbrio presa-predador}, tem sido investigado de forma experimental?
+
+    Que variáveis independentes (estímulos, causas) e dependentes (resultados, consequências) são mais comumente observadas nas simulações computacionais, ou mesmo em experimentos reais? 
+    
+
+    Quais as estruturas conceituais, intelectuais e sociais das pesquisas nesse tema?
+\end{quote}
+
+A sua análise bibliométrica vai buscar respostas a essas questões (ou questões similares) e é o produto da tarefa, que deve estar apresentado num novo capítulo que você vai criar, na parte \ref{part:estudos:exploratorios}, no relatório da turma no Overleaf.
+
+\section{Exemplo de uma análise bibliométrica quase completa}
+
+Veja como referência de trabalho de grande porte um exemplo da análise descrita no 
+no capítulo \ref{chap:bibliometria:jhcf}, abordando desde a  Seção \ref{MASSA@jhcf:questoes} até a Seção  \ref{MASSA@jhcf:analise}.
+
+O conteúdo textual do capítulo \ref{chap:bibliometria:jhcf} está registrado no arquivo ``tarefa-jhcf.tex'', no diretório:
+\begin{verbatim}
+2-Analise-Exploratoria-Dados /tarefas /T4-Pesquisa-Bibliografica /estudantes/
+\end{verbatim}
+
+Os dados e imagens usados no capítulo \ref{chap:bibliometria:jhcf} estão depositados no diretório:
+\begin{verbatim}
+/exploratory-data-analysis /jhcf / PesqBibliogr / SimulacaoMultiagente/
+        WoS-20220203
+\end{verbatim}
+
+\section{\textit{Dataset} de Análise}
+
+A análise bibliométrica é um tipo de análise exploratória de dados, e como toda análise de dados, é fundamental evidenciar quais foram os dados usados,  isso é, o \textit{dataset}, e como eles foram gerados.
+
+No capítulo de exemplo, o \textit{dataset} usado está em :
+
+\begin{verbatim}
+/exploratory-data-analysis /jhcf / PesqBibliogr / SimulacaoMultiagente
+        /WoS-20220203/wos6935recs.txt
+\end{verbatim}
+
+
+\section{Etapas da Análise}
+
+A sua análise precisa ser realizada e descrita em cinco etapas, e deve seguir as orientações feitas em \ref{metodo:analise:bibliografica}, com base no detalhamento proposto por \citet{aria_bibliometrix_2017}:
+\begin{enumerate}
+    \item \textit{Study design} (Planejamento do estudo);
+
+    \item  \textit{Data collection} (Coleta de dados);
+
+    \item \textit{Data analysis} (Análise dos dados);
+
+    \item \textit{Data visualization} (Visualização dos dados representados de forma gráfica, em vários formatos, vários tipos de diagrama);
+
+    \item  \textit{Interpretation} (Interpretação, traçar conclusões, reflexões, sugestões de aprofundamento).
+\end{enumerate}
+
+\section{Critérios de Pontuação\label{sec:tarefa:analise:biblio:pontuacao}}
+
+Os 20 pontos da tarefa serão distribuídos conforme o atendimento aos critérios seguintes.
+
+\begin{description}
+    \item [2 pontos] A seção \textit{Study design} (Planejamento do estudo) deve apresentar o fenômeno de interesse (simulado e real) com citação a pelo menos duas referências bibliográficas encontradas antes da pesquisa, sendo que uma delas pode ser uma citação à Wikipedia ou a uma página web, e a outra citação a um artigo de revista, conferência ou livro, encontrados antes da busca em bases de dados bibliográficas;
+    \item [3 pontos] A seção \textit{Study design} (Planejamento do estudo) deve apresentar suas perguntas de pesquisa tendo em vista os tipos de perguntas de pesquisa feitas em uma pesquisa bibliométrica;
+    \item [2 pontos] A seção \textit{Data collection} (Coleta de dados) deve apresentar cuidadosamente a formação da string de busca feita na Web of Science.
+    \item [2 pontos] A seção \textit{Data collection} (Coleta de dados) deve apresentar os passos que foram gerados para obter o \textit{dataset} de análise bibliométrica que será analisado
+    \item [2 pontos] A seção \textit{Data collection} (Coleta de dados) deve apresentar um \textit{dataset} que  contem, minimamente, 500 registros bibliográficos, sendo um valor ideal do número de registros do \textit{dataset} estar entre 1.000 e 2.500.
+    \item [4 pontos] Na seção \textit{Data visualization} (Visualização dos dados) devem ser apresentados pelo menos três gráficos e três tabelas, para explorar cada uma das três estruturas do conhecimento analisadas pelo Bibliometrix: 
+    \begin{itemize}
+        \item Estrutura Conceitual do Conhecimento;
+        \item Estrutura Social  do Conhecimento e;
+        \item Estrutura Intelectual do Conhecimento;
+    \end{itemize}
+    \item [5 pontos] Na seção   \textit{Interpretation} (Interpretação) todas as perguntas de pesquisa formuladas no início do estudo devem ser avaliadas quanto ao atingimento de respostas, e essas respostas precisam citar e apresentar pelo menos cinco referências bibliográficas relevantes  que estão presentes no \dataset\ explorado. Essas referências devem ser citadas por meio de referências presentes na base de dados do grupo RESIC.
+    \item [-10 pontos] Organização do \LaTeX
+
+Na edição do \LaTeX~ deve-se atentar aos seguintes aspectos obrigatórios, e possibilidades de penalidades por descumprimento:
+\begin{enumerate}
+    \item [-5 pontos] O tema de sua análise bibliométrica deve envolver o uso de simulação do fenômeno simulado no código por você escolhido, e opcionalmente experimentação no mundo real para compreensão do fenômeno. 
+    \item [-10 ponto] Todos os dados, inclusive o \textit{dataset} bibliográfico e as imagens, usadas na produção da análise, deve estar inseridos no diretório de análise exploratória de dados, individual do estudante;
+    \item [-5 ponto] Todas as figuras e gráficos inseridos na análise devem ser individualmente rotulados com \textit{label}, sem conflitar com os \textit{labels} já existentes, devem ter um título (\textit{caption}) descritivo do que apresenta a figura e o nome do \textit{dataset} usado, e também a figura/gráfico deve ser explicitamente descritas e citadas, usando referência (ref);
+    \item [-5 ponto] As figuras deve ser automaticamente dimensionadas, e eventualmente rotacionadas,  para se adaptar à largura e (ou) altura do texto na página, visando ter uma boa visibilidade. 
+\end{enumerate}
+
+\end{description}
+
+\section{Entrega da Tarefa}
+
+\subsection{Criando os arquivos}
+
+O nome do arquivo de texto á ser criado com a sua análise bibliométrica deve ter a forma:
+
+\begin{verbatim}
+tarefa-<githubusername>.tex
+\end{verbatim}
+
+Todas as figuras, tabelas, dados etc, incluídas no texto, devem estar montadas no diretório:
+\begin{verbatim}
+/exploratory-data-analysis /<githubusername> / PesqBibliogr / <tema-pesquisa>
+\end{verbatim}
+
+onde
+\texttt{<tema-pesquisa>} é um nome curto, em formato \textit{CamelCase}, que você dará ao diretório onde os dados, figuras, etc, do seu estudo, estarão montados. Não use caracteres acentuados em nomes de arquivos no Overleaf.
+
+Veja exemplos de dados e figuras usadas na preparação do estudo no capítulo \ref{chap:bibliometria:jhcf}, no diretório
+\begin{verbatim}
+/exploratory-data-analysis /jhcf /PesqBiblogr /SimulacaoMultiagente
+\end{verbatim}
+
+O arquivo de texto com o seu capítulo deve ser montado no diretório:
+\begin{verbatim}
+3-Analise-Exploratoria-Dados / tarefas / T6-Pesquisa-Bibliografica 
+    /estudantes /
+\end{verbatim}
+
+Depois, você vai fazer o \textit{input} do arquivo de texto em:
+\begin{verbatim}
+3-Analise-Exploratoria-Dados /tarefas /T6-Pesquisa-Bibliografica 
+    /estudantes /main.tex
+\end{verbatim}
+
+\subsection{Compilando a Tarefa}
+
+Após fazer o \textit{input} do conteúdo produzido por você, faça os ajustes necessários para garantir que a compilação do \LaTeX~ ocorre sem introdução de erros ou novos \textit{warnings}.
+
+\subsection{Entregando a Tarefa no Github}
+
+Quando a compilação da sua entrega estiver satisfatória, use a interface do Overleaf para enviar suas contribuições para o repositório \textbf{origin}, com a opção:
+
+\begin{verbatim}
+Menu -> Sync -> github -> Push Overleaf Changes do Github
+\end{verbatim}
+
+Informe no \textit{commit} a seguinte mensagem: 
+\begin{verbatim}
+Tarefa 6 - <Seu Nome Completo> - <githubusername>
+\end{verbatim}
+
+Após o \textit{commit} bem sucedido, use os comandos \verb|git pull; git log| ou equivalente, para ver o \textit{tag} de seu \textit{commit} na lista de \textit{commits} no repositório \textbf{origin}. Informe esse \textit{tag} no texto online desta tarefa. 
+Veja um exemplo a seguir:
+
+\begin{verbatim}
+commit 3af590b7fc3b06ec4375fb7eaba3b07abb21cda1 
+     (HEAD -> main, origin/main, origin/HEAD)
+
+Author: JORGE H C FERNANDES <jhcf@unb.br>
+
+Date:   Tue Jan 25 16:18:27 2022 -0300
+
+    Tarefa 6 - Jorge Henrique Cabral Fernandes - jhcf
+\end{verbatim}
+
+\subsection{Registrando a entrega da Tarefa no Aprender}
+
+O \textit{tag} do \textit{commit} deve ser informado no texto online da tarefa no Moodle, como exemplo:
+\begin{verbatim}
+3af590b7fc3b06ec4375fb7eaba3b07abb21cda1
+\end{verbatim}
+

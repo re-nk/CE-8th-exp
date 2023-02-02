@@ -1,0 +1,11 @@
+https://www.webofscience.com/wos/woscc/summary/291f2174-7d90-49ac-8ac2-394a52a576ee-6af2b09d/relevance/1
+
+ALL=( ( (agent-based) OR (simulation model))AND ( (propagation) OR (proliferate)) AND ( (malware) OR (virus) OR (worm) ))
+
+
+
+final query
+
+https://www.webofscience.com/wos/woscc/summary/a957dde3-deff-47e5-957f-07b948edd2ca-6af2cb96/relevance/1
+
+ALL=( ( (agent-based)  OR (model) OR (simulation))AND ( (propagation) ) AND ( (malware) OR (worm) ) AND network)

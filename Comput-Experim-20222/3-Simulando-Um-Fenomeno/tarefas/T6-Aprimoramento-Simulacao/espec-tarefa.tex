@@ -1,0 +1,99 @@
+\chapter{Especificação da Tarefa T6 - Aprimoramento de uma Simulação: Laboratório de Simulação em Python/MESA - Parte 1\label{chap:tar4.1-criacao:lab}}
+
+\section{A Tarefa} 
+
+Nessa tarefa você vai iniciar a criação de um novo laboratório de simulação
+usando o framework Python/Mesa, a partir de mudanças no código de um dos exemplos disponíveis no conjunto de exemplos disponível na distribuição padrão do \textit{frame
+work} Mesa.
+
+A codificação e descrição equivalem a criar um laboratório de simulação experimental.
+
+A execução da simulação corresponde à realização de experimentos de simulação.
+
+\section{O código: Criação do Laboratório}
+
+\subsection{Características do Laboratório}
+
+O código da simulação apresentada deve atender às seguintes características, em relação ao código original:
+\begin{itemize}
+%    \item Deve apresentar variações no comportamento do modelo e no comportamento dos agentes. As duas variações podem ser mínimas, mas precisam ser justificadas, baseadas em alguma hipótese causal que você deve declarar, sobre o seu entendimento do modelo que está sendo simulado;
+    \item Deve apresentar menos um parâmetro ou variável adicional que possa ser manipulável na interface do usuário, em relação ao modelo original. A sua hipótese causal deve estar relacionada com essa variável manipulável, e deve estar embasada, mesmo que superficialmente, na sua pesquisa bibliométrica realizada na tarefa T4;
+    \item Deve apresentar, na interface de observação da simulação, pelo menos um gráfico novo, mostrando a variação de um novo dado de efeito, necessariamente relacionados com uma hipótese de causa e efeito, e que foi associada às suas descobertas na pesquisa bibliométrica. 
+    Podem ser os mesmos dados já existentes na simulação original, ou novos dados que você acha importante serem apresentados. Para criar essa nova variável pode ser necessário alterar o seu modelo de simulação;
+    % \item Deve coletar e gravar dados gerados durante cada execução da simulação, em dois arquivos no formato CSV, usando as ferramentas próprias do framework, apresentadas na URL \url{https://mesa.readthedocs.io/en/stable/tutorials/intro_tutorial.html#collecting-data}. Um dos arquivos contém os dados de variáveis no nível do modelo, e outro de variáveis no nível do agente, por exemplo:
+    % {\footnotesize
+    % \begin{itemize}
+    %     \item \verb|model-data-iter-10-steps-10-2021-11-05-17:32:12.906885.csv|
+    %     \item \verb|agent-data-iter-10-steps-10-2021-11-05-17:32:12.906885.csv|
+    % \end{itemize}
+    % }
+\end{itemize}
+
+\subsection{A entrega do Laboratório}
+
+Para depositar o código fonte do simulador, atenda aos seguintes aspectos de organização:
+\begin{itemize}
+    \item O seu código deve estar em um repositório em sua conta individual no git, usando um nome \verb|<project-name>|, para o modelo criado, possivelmente uma pequena variação em relação ao nome do diretório onde se encontra a simulação usada como base. Por exemplo, o nome do seu \verb|<project-name>| pode ser
+    \verb|boltzmann-wealth-model-greedy|, com uma url \url{https://github.com/<githubusername>/<project-name>};
+    \item No raiz do seu repositório, o arquivo \verb|Readme.md| deve conter:
+    \begin{itemize}
+        \item Apresentação do novo modelo, em sua relação ao modelo original;
+        \item Descrição da hipótese causal que você deseja comprovar;
+        \item Justificativa para as mudanças que você fez, em relação ao código original;
+        \item Orientação sobre como usar o simulador; e
+        \item Descrição das variáveis do modelo usadas na simulação;
+        \item Quaisquer outras informações que você julgue importante;
+    \end{itemize}
+    \item O resto do repositório deve conter o seu código.
+\end{itemize}
+
+Ao concluir o seu código crie uma subtree dentro do diretório a seguir, no repositório central da disciplina:
+
+\verb|labs/<githubusername>/|
+
+Dentro do diretório \verb|labs/<githubusername>/|, no seu clone do repositório origin, deve haver um ponteiro para o repositório onde você desenvolveu o seu simulador. No repositório local, vá para o diretório raiz e use o comando abaixo para criar esse ponteiro:
+
+{\footnotesize
+\begin{verbatim}
+git subtree add --prefix labs/<githubusername>/<project-name> 
+ https://github.com/<githubusername>/<project-name> master --squash
+\end{verbatim}
+}
+
+Não se esqueça de enviar suas mudanças para o repositório central com \verb|git push|.
+
+Para mais detalhes sobre o que faz o comando \verb|git subtree| veja as urls \url{https://stackoverflow.com/questions/36554810/how-to-link-folder-from-a-git-repo-to-another-repo} e \url{https://blog.developer.atlassian.com/the-power-of-git-subtree/}
+
+% % \section{Dados de Simulação: Os experimentos iniciais}
+
+% % Além de depositar os código fonte, você precisa depositar pelo menos um par de arquivos CSV (\textit{Comma Separated Values}), que apresenta resultados de pelo menos cinco simulações (experimentos), com distintos valores para as variáveis apresentadas na interface do usuário, especialmente as variáveis independentes que você introduziu no modelo. Os valores para as variáveis dependentes também devem ser coletados.
+
+% % Os nomes de cada arquivo CSV devem permitir fácil identificação dos parâmetros e valores fixos, usados na execução da simulação, por exemplo, os dois arquivos a seguir listados indicariam os dados da execução de várias simulações (experimentos), onde o valor da variável \textbf{greedy} foi determinado como True:
+% % \begin{itemize}
+% %     \item \verb|agent-data-greedy_True.csv|
+% %     \item \verb|model-data-greedy_True.csv|
+% % \end{itemize}
+
+% % Os arquivos devem estar armazenados no diretório 
+% % \textbf{labs / <githubusername>
+% % / <project-name> / experiments /  <data-experimento> /}, onde:
+% % \begin{itemize}
+% %     \item \verb|<project-name>| é um nome do seu laboratório. 
+% %     \item \verb|<data-experimento>| é a data em que você executou os experimentos, no formato AAAAMMDD;
+% % \end{itemize}.
+
+% % Perceba que o nome dos arquivos de dados gerados nos experimentos devem obedecer às regras de nomeação de arquivos, já indicadas das orientações iniciais deste documento;
+    
+% Use git push (Não o overleaf) para depositar nos diretórios do repositório origin, os arquivos gerados durante os experimentos (execução da simulação).
+
+\section{Descrição do Laboratório}
+
+Crie no diretório:
+\begin{verbatim}
+    3-Simulando-Um-Fenomeno/tarefas/T6-Aprimoramento-Simulacao
+        /estudantes
+\end{verbatim}
+um novo capítulo explicando a sua simulação, como no modelo no capítulo \ref{desenho:experimento:jhcf}.
+
+Realize os processos de entrega de trabalho conforme as orientações em \url{https://www.overleaf.com/read/cytswcjsxxqh}.
+

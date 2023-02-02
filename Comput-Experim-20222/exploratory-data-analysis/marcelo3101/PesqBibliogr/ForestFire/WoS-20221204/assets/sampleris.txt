@@ -1,0 +1,94 @@
+FN Clarivate Analytics Web of Science
+VR 1.0
+PT C
+AU Hu, XL
+   Ge, M
+AF Hu, Xiaolin
+   Ge, Mu
+BE Martin, CR
+   Blas, MJ
+   Psijas, AI
+TI MODELING AND SIMULATING PRESCRIBED FIRE IGNITION TECHNIQUES
+SO PROCEEDINGS OF THE 2021 ANNUAL MODELING AND SIMULATION CONFERENCE
+   (ANNSIM'21)
+LA English
+DT Proceedings Paper
+CT Annual Modeling and Simulation Conference (ANNSIM)
+CY JUL 19-22, 2021
+CL ELECTR NETWORK
+SP Soc Modeling & Simulat Int, Assoc Comp Machinery, Inst Elect & Elect Engineers
+DE Prescribed fire; Ignition techniques; Modeling and simulation; Ignition
+   plan specification; DEVS
+ID WILDFIRE SPREAD; DEVS-FIRE; SYSTEMS
+AB Prescribed fire ignition techniques have significant impact on prescribed fires' growth behavior. This paper presents a systematic way of modeling and simulating prescribed fire ignition techniques. An ignition plan specification is developed to formally specify the ignition activities and schedules of prescribed burning events. The ignition plan specification is used by ignition agents, which transform an ignition plan into detailed tasks and carry out the ignition tasks while coupling with a fire spread simulation model. Simulation results of six ignition scenarios corresponding to six basic ignition techniques are provided. The simulation results demonstrate the effectiveness of the developed modeling approach and show that different ignition techniques can result in different fire growth patterns for prescribed fires.
+C1 [Hu, Xiaolin; Ge, Mu] Georgia State Univ, Dept Comp Sci, 25 Pk Pl, Atlanta, GA 30303 USA.
+C3 University System of Georgia; Georgia State University
+RP Hu, XL (corresponding author), Georgia State Univ, Dept Comp Sci, 25 Pk Pl, Atlanta, GA 30303 USA.
+EM xhu@gsu.edu; mge3@student.gsu.edu
+FU US Department of Agriculture (USDA) National Institute of Food and
+   Agriculture (NIFA) [2019-67021-29011]
+FX This work is supported in part by the US Department of Agriculture
+   (USDA) National Institute of Food and Agriculture (NIFA) under grant
+   number 2019-67021-29011.
+CR Anderson H.E., 1982, INT122 USDA FOR SERV
+   Andrews P. L., 2005, RMRSGTR106 DEP AGR F
+   Beachly E. M., 2017, THESIS U NEBRASKA LI
+   Boer MM, 2009, FOREST ECOL MANAG, V259, P132, DOI 10.1016/j.foreco.2009.10.005
+   Bugwood, 2021, FIR TECHN GUID PRESC
+   Carvalho EO, 2011, INT J WILDLAND FIRE, V20, P474, DOI 10.1071/WF10061
+   EFire, 2021, FIR TECHN
+   Fernandes PM, 2003, INT J WILDLAND FIRE, V12, P117, DOI 10.1071/WF02042
+   Finney MA, 1998, USDA FOR SERV RM RES, P1
+   Finney MA, 2011, J COMBUST, V2011, DOI 10.1155/2011/548328
+   Hiers J. K., 2020, FIRE ECOL, V16
+   Hu XL, 2007, PROCEEDINGS OF THE 2007 WINTER SIMULATION CONFERENCE, VOLS 1-5, P1254
+   Hu XL, 2012, SIMUL-T SOC MOD SIM, V88, P259, DOI 10.1177/0037549711414592
+   Hu XL, 2009, ACM T MODEL COMPUT S, V19, DOI 10.1145/1596519.1596524
+   Hu XL, 2005, SIMUL-T SOC MOD SIM, V81, P91, DOI 10.1177/0037549705052227
+   Johansen R. W, 1987, IGNITION PATTERNS PR
+   Linn RR, 2020, ENVIRON MODELL SOFTW, V125, DOI 10.1016/j.envsoft.2019.104616
+   Martin R. E., 1978, GTR76 PAC NW FOR RAN
+   Ntaimo L, 2008, SIMUL-T SOC MOD SIM, V84, P137, DOI 10.1177/0037549708094047
+   Papadopoulos GD, 2011, IEEE SYST J, V5, P233, DOI 10.1109/JSYST.2011.2125230
+   Pastor E, 2003, PROG ENERG COMBUST, V29, P139, DOI 10.1016/S0360-1285(03)00017-0
+   Randall J, 2012, CONSIDERATONS PRESCR
+   Rothermel R. C., 1972, USDA Forests Service Research Paper, Intermountain Forest and Range Experiment Station
+   Twidwell D, 2016, FRONT ECOL ENVIRON, V14, P333, DOI 10.1002/fee.1299
+   USDA, 2021, PRESCR FIR
+   Waldrop T. A., 2012, SRS054 USDA FOR SERV
+   WEBER RO, 1991, PROG ENERG COMBUST, V17, P67, DOI 10.1016/0360-1285(91)90003-6
+   Zeigler BP, 2000, THEORY MODELLING SIM
+NR 28
+TC 0
+Z9 0
+U1 0
+U2 0
+PU IEEE
+PI NEW YORK
+PA 345 E 47TH ST, NEW YORK, NY 10017 USA
+BN 978-1-56555-375-0
+PY 2020
+PG 12
+WC Computer Science, Software Engineering; Computer Science, Theory &
+   Methods; Engineering, Multidisciplinary; Mathematics, Applied
+WE Conference Proceedings Citation Index - Science (CPCI-S)
+SC Computer Science; Engineering; Mathematics
+GA BT7BK
+UT WOS:000847030800057
+DA 2022-12-05
+ER
+
+PT J
+AU Widyastuti, K
+   Imron, MA
+   Pradopo, ST
+   Suryatmojo, H
+   Sopha, BM
+   Spessa, A
+   Berger, U
+AF Widyastuti, Kirana
+   Imron, Muhammad Ali
+   Pradopo, Subyantoro Tri
+   Suryatmojo, Hatma
+   Sopha, Bertha Maya
+   ...

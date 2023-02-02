@@ -1,0 +1,8 @@
+((((viral) or (virus)) transmission)
+and 
+((((comput*) or (agent) or (multi-agent)) simulation)))
+
+(All)
+Tipos de documento: Artigo or Artigo de conferência
+
+1.160 Results from Web of Science - Main Collection

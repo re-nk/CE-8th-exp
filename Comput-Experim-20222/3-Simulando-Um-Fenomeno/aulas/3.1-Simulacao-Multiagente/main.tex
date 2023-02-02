@@ -1,0 +1,79 @@
+\chapter{Introdução à Simulação Multiagente em Python}
+
+Conforme os argumentos no vídeo de \citet{crashcourse_controlled_2018}, filósofos e pensadores sobre tecnologia ponderam que no futuro o uso de simulações computacionais pode guiar muitas das experiências reais que vivenciaremos, e é possível que já estejamos vivendo essa experiencia sensorial, como se estivéssemos em uma ``Matrix''.
+
+Este curso vai adotar essa hipótese como fundamento pedagógico, onde o estudante vai criar um laboratório de simulações para desenvolver e aprofundar sua compreensão do método experimental e de outras formas de investigação científica amparadas pelo computador.
+
+Antes de entrarmos nos detalhes do método experimental, que vai ser apresentado em capítulo adiante, este texto vai lhe orientar sobre como criar simulações de sistemas multiagentes para exploração de fenômenos complexos, que serão posteriormente analisados de forma exploratória \citep{wickham_r_2016}, e depois de forma estatisticamente significativa \citep{goldstein_choosing_2015}.
+
+Primeiro vamos falar sobre o que são simulações.
+Depois sobre o que são simulações computacionais.
+Depois sobre simulações multiagentes.
+Por fim, vamos abordar como podem ser construídas simulações multiagentes com Python/MESA.
+Ao final, você deverá ser capaz de fazer adaptações ao código de uma simulação multiagente em Python/MESA, para explorar um determinado fenômeno de seu interesse, com base em código já existente.
+
+Nos capítulos seguintes, você aprenderá:
+\begin{itemize}
+    \item A projetar e codificar a manipulação de variáveis no seu modelo de simulação, que posteriormente serão consideradas variáveis independentes ou de controle de um experimento;
+    \item A gerar massas de dados empíricos que podem ser analisadas por métodos e técnicas estatísticas.
+\end{itemize}
+
+Para concluir esta parte do curso sobre simulação, você deverá realizar uma tarefa em duas etapas, Tarefas 4.1 e 4.2, que vão evidenciar sua capacidade de fazer adaptações ao código de uma simulação multiagente em Python/MESA, para explorar de forma pré-experimental um determinado fenômeno de seu interesse, com base em código já existente.
+
+\section{O que são simulações?}
+
+Para uma ampla apresentação geral sobre simulação ver a Wikipedia em \url{https://en.wikipedia.org/wiki/Simulation}. Aqui apresentarei uma definição bem básica, suficiente para avançarmos:
+Simulações são imitações da operação ou funcionamento de um sistema, fenômeno ou processo ao longo do tempo. 
+As imitações são usualmente feitas com o uso de modelos, que podem ser mecânicos, computacionais etc. Um conjunto de pessoas também pode ser usado para realizar uma simulação, isso é, para imitar um sistema, como se um tipo de coreografia de dança. 
+Para compreender a importância e o valor do desenvolvimento de modelos, ver \citet{epstein_why_2008}.
+
+\section{O que são simulações computacionais?}
+
+Simulações computacionais são aquelas produzidas com o uso de modelos computacionais, usualmente sistemas de software codificados para que o seu processamento de dados imite os passos de um sistema ou fenômeno qualquer, de natureza física, biológica, social, computacional etc, usando modelagem matemática. Esse programa de computador é chamado ``modelo de simulação computacional''
+\citep{winsberg_computer_2019}. Cada execução do programa é chamado de ``uma simulação'' do sistema, ou do fenômeno ou do processo.
+
+Para um vídeo bastante ilustrativo e curto (menos de 6 minutos) sobre a importância e oportunidade de realizar simulações computacionais, ver \citet{eaglin_introduction_2013}.
+
+\section{O que são simulações baseadas em agentes?}
+
+Existe dois tipos principais de simulações computacionais \citep{winsberg_computer_2019}:
+\begin{description}
+\item [Simulação Baseada em Equações] Esse tipo de simulação utiliza equações matemáticas (analíticas) que modelam fenômenos, usualmente fenômenos físicos, de modo que cada passo da simulação corresponde a avanços diferenciais na computação das imagens (outputs) da equação, em relação às variações nos domínios (inputs) da equação. \citet{winsberg_computer_2019} destaca que as equações podem se referir ao:
+\begin{itemize}
+    \item Comportamento de várias partículas individuais, ou;
+    \item Comportamento de um fluido evoluindo ao longo do tempo.
+\end{itemize}
+Os engenheiros de áreas como Engenharia Civil e Mecânica, entre outros, usam muitas simulações desse tipo.
+
+\item [Simulação Baseada em Agentes] Esse tipo de simulação é parecido com a simulação baseada em equações que determinam o comportamento de partículas individuais, só que na simulação baseada em agentes inexistem equações diferenciais globais que determinam o comportamento dos indivíduos \citep{winsberg_computer_2019}. Na simulação baseada em agentes, o comportamento dos agentes é determinado exclusivamente pelas regras locais que cada um segue (definidas por meio de algoritmos), as quais podem variar conforme o estado individual dos agentes. Esse tipo de simulação é ameno ao estudo de sistemas complexos adaptativos \citep{miller_complex_2007}, especialmente sistemas sociais, formados por seres humanos ou seres vivos, ou seja, partículas dotadas de agência ou inteligência.
+\end{description}
+
+Esse tipo de simulação é usado por cientistas sociais, e não tem tanta aplicação no campo das engenharias clássicas.
+
+\section{Simulação Monte Carlo}
+
+Nesta disciplina, trabalharemos primariamente com simulações baseadas em agentes, pela facilidade de adaptação dos programas desse tipo à proposta didática da disciplina, embora os princípios de experimentação também possam ser aplicáveis às simulações baseadas em equações.
+
+Adicionalmente, um outro tipo de simulação computacional que não se enquadra na definição clássica de simulação (imitação de um fenômeno ou processo ao longo do tempo), mas que é fundamentada em princípios de estatística inferencial \textbf{que também utilizaremos para o teste de hipóteses sobre os dados dos experimentos a serem realizados} é a simulação do tipo Monte Carlo. 
+
+Em simulações do tipo Monte Carlo não se está buscando imitar o processo ou comportamento de um fenômeno físico, químico ou social, mas sim calcular o valor de uma quantidade sobre o qual há uma grande incerteza envolvida, usando os conceitos de análise estatística de amostragens aleatórias de valores sobre uma população.
+
+O trabalho que faremos na disciplina consistirá em usar os princípios da estatística inferencial usados na simulação Monte Carlo para  executar um conjunto de simulações multiagentes que vão guiar nossas experimentações para calcular as propriedades estatísticas do fenômeno simulado por simulação multiagentes.
+
+\section{O que são simulações multiagentes?}
+
+Simulações multiagentes são simulações baseadas em agentes, onde existem explicitamente regras de interações entre os agentes. Ou seja, onde os agentes se relacionam entre si, de modo que o comportamento de um é influenciado, em maior ou menor escala, pelo comportamento dos outros. 
+
+Adicionalmente, as simulações (de sistemas) multiagentes são bastante adequadas para a modelagem de fenômenos sociais, especialmente sistemas sociais humanos, posto que esse tipo de modelo permite que cada agente siga suas regras individuais, o que se assemelha muito à forma como as pessoas se comportam em sociedade.
+
+\section{Simulações multiagentes com Python/MESA}
+
+MESA \citep{kazil_utilizing_2020} é um \textit{framework} de simulação multiagente escrito em Python, que tem bastante similaridade com outras linguagens, \textit{frameworks} e ferramentas como NetLogo \citep{wilensky_netlogo_1999},  
+
+Para instalar mesa em uma versão específica, usando a versão 3.8 do Python, por exemplo, a versão com tag \verb|v0.9.0| use o comando abaixo.
+
+\begin{verbatim}
+    python3.8 -m pip install -e git+https://github.com/projectmesa/mesa@v0.9.0#egg=mesa
+\end{verbatim}
+
+\input{3-Simulando-Um-Fenomeno/aulas/3.1-Simulacao-Multiagente/exemplos_mesa}

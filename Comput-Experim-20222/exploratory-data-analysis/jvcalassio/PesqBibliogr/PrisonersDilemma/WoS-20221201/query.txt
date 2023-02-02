@@ -1,0 +1,6 @@
+((iterat* 
+  OR recurrent 
+  OR repeat* 
+  OR repetitive) 
+AND prisoner* 
+AND dilemma)

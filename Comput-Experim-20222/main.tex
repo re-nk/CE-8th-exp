@@ -1,0 +1,175 @@
+ \documentclass[12pt]{book}
+%https://www.overleaf.com/project/629e18789b6baeb860fd2545
+\input{packages}
+\input{packages-estudantes}
+
+% define cores personalizadas para o texto de cada autor
+\input{autores} 
+
+\makenoidxglossaries
+\loadglsentries{1-Introducao/tarefas/T2-Glossario/estudantes/main}
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+%\captionsetup[table]{name=Quadro}
+\renewcommand{\lstlistingname}{Listagem de Código}
+
+\newcommand{\dataset}{\textit{dataset}}
+\newcommand{\query}{\textit{query}}
+\newcommand{\githubusername}{\textless githubusername\textgreater}
+
+\def\printpart{1} % Orientações Gerais, Introdução e Fundamentos de Pesquisa Bibliográfica
+
+% Substitua o valor de printpart por 1, 2, 3, 4 ou 5, conforme a parte do documento que você quer gerar 
+\def\printpart{1}
+
+\setlength{\headheight}{73.04742pt}
+\addtolength{\oddsidemargin}{-1.5cm}
+\addtolength{\evensidemargin}{-1.5cm}
+\addtolength{\textwidth}{3cm}
+\addtolength{\topmargin}{-3cm}
+\addtolength{\textheight}{2cm}
+
+\addbibresource{RESIC.bib}
+	
+\begin{document}
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+\clearpage
+\thispagestyle{empty}
+
+\begin{titlepage}
+\begin{center}
+ {\huge\bfseries \includegraphics[width=4cm]{unb-logo.jpg}\\
+	CIC0203 - Computação Experimental - TA - 2022.2 - Notas e Registros
+	\\Overleaf read only: \url{https://www.overleaf.com/read/rytgshjfsgpv}\\ 
+	Github Repositório Origin (enviar tarefas aqui): \url{https://github.com/jhcf/Comput-Experim-20222}\\
+	}
+
+ % ----------------------------------------------------------------
+ \vspace{1.5cm}
+{\large	% author names and affiliations
+	Jorge Henrique Cabral Fernandes (jhcf)\\
+	Arthur Barreiros de Oliveira Mota (BarreirosM)\\
+    Gabriel Pinheiro da Conceição (pinheirogh)\\
+    Breno Ribeiro Corrêa (brenoZ)\\
+    João Victor de Souza Calassio (jvcalassio)\\
+    Matheus Barbosa Santos (MatBSa)\\
+    Edgar Sampaio de Barros (edgarsamp) \\
+    Felipe Gomes Paradas (fparadas) \\
+    Marcelo Aiache Postiglione (marcelo3101) \\
+    Paulo Alvim Alvarenga (alvimpaulo)\\
+    Marco Antônio Souza de Athayde (masathayde)\\
+    João Antonio Desidério de Moraes (joaoadm94)\\
+    Gabriel da Silva Corvino Nogueira (nosgueira)\\
+    Thiago Masera Tokarski (Toskosz)\\
+    Erick Rodrigues Fraga (mutenesss)\\
+    André Cássio Barros de Souza (andreloff)\\
+    Lucas de Oliveira Silva (LuscasOSilva)\\
+    João Pedro de Sousa Soares Martins (jpssm)\\
+	Isaque Augusto da Silva Santos (seraphritt)\\
+	Gustavo Rodrigues Gualberto (GustavoRGYGO)\\
+    André Fioravante Nicolodi Durante Júnior (AndreDuranteJr)\\
+	Cláudio Roberto Oliveira Peres de Barros (ClaudioBarros)\\ 
+        Fernando Ferreira Cordeiro (FernandoCordeiro)\\
+        Paulo Mauricio Costa Lopes (RequiemDosVivos)\\
+	Bruno Abreu Kamienski (brunosabreu)\\
+	Gabriel Teixeira Ribeiro\\
+ }
+	\vspace{1.5cm}
+	{\large Brasília, \DTMnow}
+\end{center}
+\end{titlepage}
+	%\date{10 de março de 2021}
+	% make the title area
+    %\maketitle
+    \listoftodos
+	\printnoidxglossary
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\clearpage
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+
+	\chapter*{Resumo}
+
+	Este documento contém notas de aula e registros em geral, produzidos de forma textual, pelo professor e turma da disciplina CIC0203 - Computação Experimental - TA - 2022.2.
+	
+	A disciplina adotará a abordagem de estudos estatísticos de simulações computacionais, como base para a construção de experimentos.
+
+\part{Preparação\label{part:intro}}
+
+    \input{0-Orientacoes/main}
+
+    \input{0-Orientacoes/tarefas/T1-Ingresso/espec-tarefa}
+
+    \input{1-Introducao/aulas/1.1-Ciencia}
+
+	\includepdf[pages=-]{1-Introducao/aulas/Ciencia-e-sua-Avaliacao} 
+    \input{1-Introducao/tarefas/T2-Glossario/espec-tarefa}
+    
+    \input{1-Introducao/tarefas/T3-Impressoes-Ciencia/espec-tarefa}
+
+    \input{1-Introducao/tarefas/T3-Impressoes-Ciencia/estudantes/main}
+
+\part{Pesquisa Bibliométrica\label{part:biblio}}
+
+    \input{2-Analise-Exploratoria-Dados/aulas/2.2-Pesquisa-Bibliografica/main}
+
+    \input{2-Analise-Exploratoria-Dados/aulas/2.3-Analise-Bibliometrica/main}
+
+    \input{2-Analise-Exploratoria-Dados/tarefas/T4-Pesquisa-Bibliografica/espec-tarefa}
+
+\chapter{Tarefas T4 entregues pelos Estudantes}
+
+    \input{2-Analise-Exploratoria-Dados/tarefas/T4-Pesquisa-Bibliografica/estudantes/main}
+
+\part{Simulação Computacional\label{part:simulacao}}
+
+    \input{3-Simulando-Um-Fenomeno/aulas/3.1-Simulacao-Multiagente/main}
+
+    \input{3-Simulando-Um-Fenomeno/tarefas/T6-Aprimoramento-Simulacao/espec-tarefa}
+
+    \input{3-Simulando-Um-Fenomeno/tarefas/T6-Aprimoramento-Simulacao/estudantes/main}
+
+    \input{3-Simulando-Um-Fenomeno/aulas/3.2-Manipulando-Variaveis/main}
+
+    \input{3-Simulando-Um-Fenomeno/aulas/3.3-Geracao-Dados/main}
+
+%\input{2-Simulando-Um-Fenomeno/tarefas/T4.2-Aprimoramento-Simulacao/espec-tarefa}
+    
+\part{Estudos Empíricos Exploratórios\label{part:estudos:exploratorios}}
+
+    \input{2-Analise-Exploratoria-Dados/aulas/2.1-AnaliseExploratoriaDeDadosComR-RStudio/main}
+
+    \input{3-Simulando-Um-Fenomeno/tarefas/T7-Aprimoramento-Simulacao/espec-tarefa}
+
+    \input{3-Simulando-Um-Fenomeno/tarefas/T7-Aprimoramento-Simulacao/estudantes/main.tex}
+
+\part{Simulação como Estratégia Experimental\label{part:simulacao:experimental}}
+
+    \input{4-Computacao-Experimental/aulas/4.1-Componentes-Experimento/main}
+
+    \input{4-Computacao-Experimental/aulas/4.2-Estatistica-Experimentacao/main}
+
+    \input{4-Computacao-Experimental/aulas/4.3-Computacao-Experimental/main}
+
+    \input{4-Computacao-Experimental/aulas/4.4-Teste-Hipoteses/main}
+
+    \input{4-Computacao-Experimental/tarefas/T8-Teste-Hipoteses/espec-tarefa}
+
+    \input{4-Computacao-Experimental/tarefas/T8-Teste-Hipoteses/estudantes/main}
+
+\part{Ética, Métodos Exploratórios e Descritivos\label{part:etica:estudocaso:survey}}
+
+    \input{5-Etica-Metodos-Exploratorios-Descritivos/aulas/5.1-Outros-Metodos/main}
+
+\input{4-Computacao-Experimental/tarefas/T9-Teste-Hipoteses2/espec-tarefa.tex}
+
+\input{4-Computacao-Experimental/tarefas/T9-Teste-Hipoteses2/estudantes/main.tex}
+
+\label{referencias}
+    \printbibliography
+
+\end{document}

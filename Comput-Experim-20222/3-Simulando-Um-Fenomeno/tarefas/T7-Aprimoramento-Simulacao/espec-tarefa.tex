@@ -1,0 +1,108 @@
+\chapter{Especificação da Tarefa T7 - Novo Aprimoramento de uma Simulação: Laboratório de Simulação em Python/MESA - Parte 1 - Parte 2\label{chap:tar4.2-analise}}
+
+\section{A Tarefa} 
+
+Nessa tarefa você vai aprofundar a compreensão dos fenômenos modelados no seu laboratório de simulação apresentado em sua resposta à tarefa \ref{chap:tar4.1-criacao:lab}, criando um novo capítulo a partir da extensão do anterior,
+usando métodos da análise estatística descritiva e exploratória, como proposta por \citet{wickham_r_2016}.
+
+Conceitualmente, você não vai precisar alterar o fenômeno sob investigação no seu laboratório, mas apenas desenvolver uma abordagem experimental para compreensão do fenômeno. 
+
+Para tal, deve realizar os seguintes passos:
+\begin{description}
+    \item [Preparar a coleta de dados] Criar e documentar novo código Python para coletar dados durante a execução de um batch de simulações do seu fenômeno, usando o seu modelo de simulações, isso é, o seu software, o seu laboratório;
+    \item [Coletar dados] Executar o batch de simulações, onde cada simulação é um experimento, e cada experimento terá seu resultado inserido como linha de uma planilha que será usada para análises descritivas;
+    \item [Explorar os dados] Usar o R/RStudio ou Python (Pandas, outros) de forma interativa, para realizar análises descritivas dos dados de simulação;
+    \item [Documentar a exploração] Expandir o seu capítulo de descrição do laboratório, para registrar os novos códigos em Python ou códigos em R, gráficos e textos, que apresentam as principais explorações e análises descritivas feitas por você;
+    \item [Reformular hipóteses] Com base nas análises exploratórias, você deve reformular as hipóteses que descreveu na tarefa \ref{chap:tar4.1-criacao:lab}.
+    \item [Documentar o experimento] Aprimore o seu capítulo descritivo do laboratório, com uma nova seção, descrevendo seus experimentos, e reformulação das hipóteses.
+\end{description}
+
+Esses passos são descritos nas seções a seguir.
+
+\subsection{Preparar a coleta de dados}
+
+Para criar o código da coleta de dados, veja as orientações no tutorial em \url{https://mesa.readthedocs.io/en/main/tutorials/intro_tutorial.html}.
+
+Você precisará usar as classes datacollector e batch\_run.
+
+Para ser possível a você fazer uma análise exploratória de boa qualidade realize entre 100 e 300 trezentas simulações (iterações, como usada no batch\_run), com um número predeterminado de passos (steps, como usada no batch\_run) que assegure a estabilização ou o equilíbrio da sua simulação. Veja as aulas passadas para entender o que é um \textit{steady state} (estado de equilíbrio).
+
+Um exemplo de script que prepara a coleta de dados é apresentado a seguir:
+
+\lstinputlisting[numbers=left,language={Python},basicstyle=\tiny\ttfamily,caption={Código de desenho de uma série de experimentos.},label={code:aula:batch:run}] {3-Simulando-Um-Fenomeno/tarefas/T7-Aprimoramento-Simulacao/tarefa42.py}
+
+Outro exemplo de script que prepara a coleta de dados é apresentado a seguir, com
+base em modificação do algoritmo de Schelling:
+
+\lstinputlisting[numbers=left,language={Python},basicstyle=\tiny\ttfamily,caption={Código de desenho de uma série de experimentos baseados no modelo de segregação de Schelling.},label={code:aula:batch:run:schelling}] {labs/jhcf/SchellingComPolarizacao/model.py}
+
+
+\subsection{Coletar dados}
+
+Os dados coletados durante as simulações precisam ser registrados em uma planilha no formato CSV. Armazene na planilha os valores das variáveis de controle, variáveis independentes e variáveis dependentes.
+
+Veja as orientações para coletar os dados em Python Mesa no tutorial em \url{https://mesa.readthedocs.io/en/main/tutorials/intro_tutorial.html}.
+
+Perceba que usualmente serão necessárias algumas interações entre os passos 1, 2 e 3 dessa tarefa, até você entre a codificação e coleta para que os dados seja de boa qualidade.
+
+\subsection{Explorar os dados}
+
+Use o RStudio para carregar a planilha e fazer análises exploratórias de forma interativa.
+
+Use o tutorial disponível em \url{https://r4ds.had.co.nz/exploratory-data-analysis.html}
+para aprender a fazer análises, ou o disponível em
+\url{https://bookdown.org/rdpeng/exdata/exploratory-graphs.html}.
+
+Você precisa obrigatoriamente criar distribuições de frequência, e eventualmente boxplots, que evidenciem de que forma a manipulação dos valores das variáveis independentes influenciam o resultado das variáveis dependentes.
+
+\subsection{Documentar a exploração} 
+
+Organize um código para que seja facilmente reproduzível a sua exploração.
+
+\subsection{Reformular hipóteses}
+
+com base no que aprendeu com a análise exploratória, reformule sua hipótese inicial sobre as influências das variáveis, tornando-a mais precisa e específica. 
+
+\section{A Entrega dos Experimentos usando o Laboratório}
+
+Atualize o seu laboratório com os novos códigos em Python, e com os registros produzidos durante os experimentos e análises.
+
+    Crie dentro do seu diretório pessoal no diretório \verb|labs| do repositório, um diretório \verb|experiments|. Coloque nesse novo diretório os arquivos CSV, os scripts em R/RStudio que fazem a análise exploratória, bem como os vários gráficos em PNG ou PDF que apresentam os resultados de sua análise descritiva.
+
+No seu clone de repositório local, vá para o diretório raiz e use o comando abaixo para atualizar o seu lab e experimentos:
+
+{\footnotesize
+\begin{verbatim}
+git subtree pull --prefix labs/<githubusername>/<project-name> 
+ https://github.com/<githubusername>/<project-name> master --squash
+\end{verbatim}
+}
+
+Não se esqueça de enviar suas mudanças para o repositório central com \verb|git push|.
+
+Para mais detalhes sobre o que faz o comando \verb|git subtree| veja as urls \url{https://stackoverflow.com/questions/36554810/how-to-link-folder-from-a-git-repo-to-another-repo} e \url{https://blog.developer.atlassian.com/the-power-of-git-subtree/}
+
+Finalmente, escreva a seção descritiva dos seus experimentos, ampliando o seu capítulo já escrito na tarefa anterior.
+
+% % \section{Dados de Simulação: Os experimentos iniciais}
+
+% % Além de depositar os código fonte, você precisa depositar pelo menos um par de arquivos CSV (\textit{Comma Separated Values}), que apresenta resultados de pelo menos cinco simulações (experimentos), com distintos valores para as variáveis apresentadas na interface do usuário, especialmente as variáveis independentes que você introduziu no modelo. Os valores para as variáveis dependentes também devem ser coletados.
+
+% % Os nomes de cada arquivo CSV devem permitir fácil identificação dos parâmetros e valores fixos, usados na execução da simulação, por exemplo, os dois arquivos a seguir listados indicariam os dados da execução de várias simulações (experimentos), onde o valor da variável \textbf{greedy} foi determinado como True:
+% % \begin{itemize}
+% %     \item \verb|agent-data-greedy_True.csv|
+% %     \item \verb|model-data-greedy_True.csv|
+% % \end{itemize}
+
+% % Os arquivos devem estar armazenados no diretório 
+% % \textbf{labs / <githubusername>
+% % / <project-name> / experiments /  <data-experimento> /}, onde:
+% % \begin{itemize}
+% %     \item \verb|<project-name>| é um nome do seu laboratório. 
+% %     \item \verb|<data-experimento>| é a data em que você executou os experimentos, no formato AAAAMMDD;
+% % \end{itemize}.
+
+% % Perceba que o nome dos arquivos de dados gerados nos experimentos devem obedecer às regras de nomeação de arquivos, já indicadas das orientações iniciais deste documento;
+    
+% Use git push (Não o overleaf) para depositar nos diretórios do repositório origin, os arquivos gerados durante os experimentos (execução da simulação).
+

@@ -1,0 +1,9 @@
+(epidemic spread* and simul*) or 
+
+(virus spread* and simul*) or
+
+(disease spred* and simul*)
+
+anos da publicação: 2022 or 2021 or 2020 or 2019 or 2018
+
+tipo de documento: artigo

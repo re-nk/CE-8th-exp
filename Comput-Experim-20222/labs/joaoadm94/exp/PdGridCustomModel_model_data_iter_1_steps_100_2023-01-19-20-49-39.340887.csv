@@ -1,0 +1,2 @@
+,RunId,iteration,Step,width,height,schedule_type,defect_multiplier,payoffs,seed,Cooperating,Defecting
+0,0,0,100,50,50,Random,1,,,0,2500

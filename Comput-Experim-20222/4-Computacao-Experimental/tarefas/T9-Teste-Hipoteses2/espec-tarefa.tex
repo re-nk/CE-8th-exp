@@ -1,0 +1,105 @@
+\chapter{Tarefa 9 - Teste Estatístico de Hipóteses e Estudos de Caso - Parte 2. 30 pontos\label{tarefa:teste:hipotese2:R}}
+
+Antes de realizar essa tarefa, veja atentamente as instruções do capítulo anterior: "Conceitos Centrais em Estatística Inferencial".
+
+Nessa tarefa você vai criar um novo capítulo, a partir do refinamento do capítulo anterior onde descreveu o seu laboratório com o teste para variáveis categóricas. Depois, vai fazer uma apresentação oral do seu capítulo em vídeo, conforme as orientações a seguir.
+%como no modelo da seção \ref{tarefa:teste:hipotese:R:jhcf}, contendo um %texto com as seguintes características:
+
+\section{Revise o texto da tarefa anterior}
+
+Revise cuidadosamente todo o texto da tarefa anteriormente realizada, para que nada do que foi solicitado fique ausente.
+
+\section{Teste do Chi-Quadrado} 
+
+O teste do Chi-Quadrado permite explorar a chance de associação não aleatória entre dados categóricos, na forma de uma tabela crosstable. Crie uma seção que explora, declara e verifica hipóteses usando esse tipo de teste, com os dados de seu experimento. Adote como exemplo o código da listagem a seguir.
+
+ \lstinputlisting[numbers=left,language={R},basicstyle=\tiny\ttfamily,caption={Realizando um teste de chi quadrado com amostras de um experimento},label={code:jhf:X2testCode}]{4-Computacao-Experimental/tarefas/T9-Teste-Hipoteses2/chi-square.R}
+ 
+\section{Estudo de Caso}
+
+Adote a abordagem de estudo de caso, para analise e descrição da evolução de um único experimento executado no seu simulador, desde o início até o alcance de estabilidade do fenômeno. Ao final, caracterize o experimento como sendo um caso típico ou de situação extrema, conforme as análises anteriores.
+
+Crie uma seção chamada Estudo de Caso, para conter sua descrição.
+Use pelo menos 250 palavras para essa seção.  
+
+\section{Ética}
+
+Vídeos e site:
+\begin{description}
+    \item [\url{https://www.youtube.com/watch?v=thbKYoLN1Ek}]
+    \item [\url{https://www.youtube.com/watch?v=p6Ls45MVETk}]
+    \item [Plataforma Brasil] \url{https://plataformabrasil.saude.gov.br/login.jsf}
+\end{description}
+
+Conforme os seus conhecimento de ética na realização de experimentos, discorra sobre as implicações éticas da realização de experimentos no mundo real, relativos ao fenômeno investigado.
+Use pelo menos 250 palavras para essa seção.  
+
+\section{Apresentação em Vídeo}
+ 
+ Faça uma gravação da apresentação em vídeo do seu capítulo, nas reuniões de nomes "Apresentações em Vídeo A", "Apresentações em Vídeo B" ou "Apresentações em Vídeo C", disponíveis no ambiente Teams da disciplina, contendo os seguintes aspectos:
+ \begin{description}
+     \item [Seu rosto] Inicie apresentando o seu rosto, seu nome e dizendo o que contém o vídeo: "Uma apresentação do seu laboratório";
+     \item [Texto] Compartilhe o texto do seu capítulo, para conduzir o restante da apresentação;
+     \item [Execução do simulador] Apresente o seu simulador em execução interativa, mostrando como ele pode ser usado de forma prática; e
+     \item [Hipóteses e resultados dos testes] Apresente os testes de hipóteses significativamente estatísticas que você fez, e interprete os resultados. 
+ \end{description}
+Não esqueça de gravar seu vídeo.
+
+O seu vídeo deverá ter entre 5 e 15 minutos de duração.
+
+
+% \begin{enumerate}
+%     \item [Seção Introdução] Revise a apresentação das seções, já que o seu capítulo agora ficou mais extenso; 
+%     \item [Seção o ``O Laboratório'']
+%     \begin{description}
+%     \item [Variáveis independentes ou de controle]
+%     Registre e apresente, necessariamente, uma ou mais figuras com a interface  simulador, onde estão presentes as variáveis que podem ser independentes ajustadas, bem como as variáveis dependentes. Para cada variável independente ou de controle, informe se ela é do tipo (\url{https://rcompanion.org/handbook/C_01.html}):
+%     \begin{description}
+%     \item [nominal] ``Variáveis nominais são aquelas cujos níveis são rótulos ou descrições e que não podem ser ordenados. Exemplos de variáveis nominais são sexo, escola e perguntas sim/não. Eles também são chamados de variáveis “categóricas nominais” ou “qualitativas”, e os níveis de uma variável são às vezes chamados de “classes” ou “grupos”''
+%     \item [ordinal] ``As variáveis ordinais são aquelas cujos valores podem ser ordenados ou classificados em ordem lógica, mas o intervalo entre os níveis das variáveis não é necessariamente conhecido. Medidas subjetivas são frequentemente variáveis ordinais. Um exemplo seria fazer com que as pessoas classificassem quatro itens por preferência em ordem de um a quatro. Um exemplo diferente seria fazer com que as pessoas avaliassem vários itens com base em uma escala de classificação Likert: “Em uma escala de um a cinco, você concorda ou discorda dessa afirmação?”. Um terceiro exemplo é o nível de escolaridade para adultos, considerando, por exemplo, “menor que o ensino médio”, “ensino médio”, “superior”, etc.''
+%     \item [intervalar] ``As variáveis de intervalo ou razão são aquelas que representam valores medidos ou contados: idade, altura, peso, número de alunos. Sabe-se que o intervalo entre os números é igual: o intervalo entre um quilograma e dois quilogramas é o mesmo que entre três quilogramas e quatro quilogramas.
+%  Os dados de intervalo/proporção também são chamados de dados “quantitativos”.
+
+%     \item [intervalar discreta e contínua] 
+% "Variáveis intervalares discretas e contínuas, são uma divisão de dados de intervalo ou razão. Nas intervalares discretas, os valores são necessariamente números inteiros ou outros valores discretos, como população ou contagens de itens. As variáveis intervalares contínuas podem assumir qualquer valor dentro de um intervalo e, portanto, podem ser expressas como decimais. Muitas vezes são quantidades medidas. Por exemplo, em teoria, um peso pode ser medido como 1 kg, 1,01 kg ou 1,009 kg e assim por diante. A idade também pode ser considerada uma variável contínua, embora muitas vezes a tratemos como uma variável discreta, arredondando-a para o aniversário mais recente."
+%     \end{description}
+%     \item [Código do Simulador]
+%     Apresente, no código do seu simulador, as partes que introduzem a aleatoriedade dos fenômenos de interação entre os agentes, e argumente de que forma essa aleatoriedade no código contribui para que as amostras do fenômeno simulado também sejam aleatórias. 
+%     \end{description}
+    
+%     \begin{description}
+%         \item [Apresentação das Amostras] Nessa seção, refine o que antes era apenas a apresentação das "Variáveis Dependentes e Independentes", nos seguintes termos: 
+%         Descreva cada uma das colunas da planilha de amostras de experimentos por você coletadas, informando:
+%         \begin{itemize}
+%             \item O nome da variável;
+%             \item O que significa a variável;
+%             \item Se a variável é para uso interno do simulador, variável de controle no experimento, variável independente ou variável dependente;
+%             \item As faixas de valores ou categorias dos registros obtidos, para fins de interpretação dos números (ex: Se umidade = 0, o que isso significa? Se umidade = 1, o que significa?;
+%         \end{itemize}
+        
+%         \item [Primeira Declaração Formal de Hipóteses] Revise o texto da sua primeira declaração formal de hipóteses.
+        
+%         \item [Aplicação do Teste t] 
+%         Revise o texto de aplicação do teste t.
+        
+%         \item [Segunda Declaração Formal de Hipóteses] Revise o texto da sua segunda declaração formal de hipóteses.
+    
+%         \item [Aplicação do teste de regressão linear] Revise o texto da aplicação do teste de regressão linear.
+        
+%         \item [Teste do Chi-Quadrado] 
+%         Revise o texto da sua primeira declaração formal de hipóteses.
+        
+%         Supondo que foi feita a escolha inicial do teste t de Student, para comparar médias entre duas amostras (conjunto de registros) de variável dependente, que foram obtidas a partir de estímulos com diferentes valores para pelo menos uma variável independente, faça uma declaração de hipóteses nula e alternativa para o seu teste. Aplique corretamente os conceitos de hipóteses nula e alternativa, conforme o vídeo sobre Inferência Estatística.
+%         \item [Aplicação do Teste t] Use as instruções em \url{https://stat.ethz.ch/R-manual/R-devel/library/stats/html/t.test.html}, e com base no vídeo sobre teste t (\url{https://www.youtube.com/watch?v=AgDC9yoopUA}), apresente duas diferentes execuções do teste, comparando diferentes amostras. Apresente, usando lstlistings, todo o código R usado, os resultados apresentados no Console do R, e sua interpretação dos resultados. Informe sobre a comprovação ou rejeição da hipótese nula;
+%         \item [Segunda Declaração Formal de Hipóteses] Supondo que agora vais fazer uma análise de regressão linear, com as mesmas amostras, veja o vídeo e o texto sobre regressão linear em R:
+%         \begin{itemize}
+%             \item \url{https://www.youtube.com/watch?v=u1cc1r_Y7M0}; e
+%             \item \url{https://www.r-tutor.com/elementary-statistics/simple-linear-regression/significance-test-linear-regression}.
+%         \end{itemize}
+%         Com base nos vídeos, faça uma declaração de hipóteses nula e alternativa para o seu teste, que estabeleça possível relação linear entre uma variável independente e uma dependente. Aplique corretamente os conceitos de hipóteses nula e alternativa.
+%         \item [Aplicação do teste de regressão linear] Apresente duas diferentes execuções do teste, comparando diferentes amostras por meio de regressão linear. Apresente todo o código R dos comandos e dos resultados apresentados no Console do R, e sua interpretação dos resultados, sobre a comprovação ou não da hipótese nula;
+%         \item [Conclusões] Apresente suas conclusões sobre os testes realizados.
+%     \end{description}
+%  \end{enumerate}
+    
+%\input{4-Computacao-Experimental/tarefas/4.4-Teste-Hipoteses/estudantes/main}

@@ -1,0 +1,9 @@
+( 
+  ( (schelling* OR segreg*) 
+    AND 
+    (rac* OR ethni* OR geogr*) ) 
+  OR 
+  (schelling* AND residen*)  
+) 
+AND 
+(mesa OR python* OR agent OR simulat* OR sym)
